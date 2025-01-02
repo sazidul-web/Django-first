@@ -8,7 +8,8 @@ def home2(request):
 
 def about(request):
     # return HttpResponse("This is my about page in portfolio project(/)")
-    return render(request, 'home.html')
+    context ={'name':'Sazidul','profession':'App developer'}
+    return render(request, 'home.html',context)
 
 def projects(request):
     return HttpResponse("This is my projects page in portfolio project(/)")
