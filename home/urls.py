@@ -4,5 +4,8 @@ from home import views
 
 urlpatterns = [
     path('boy/', views.home ,name='home'),
-    path('sazidul/',views.home2,name='home'), # ai same vabe iccha moto onk gula link create kora possible
+    path('about',views.about,name='about'),
+    path('project',views.projects,name='project'),
+    path('contact',views.contact,name='contact'),
+    path('signup',views.signup,name='signup'),
 ]
